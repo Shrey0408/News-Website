@@ -1,0 +1,38 @@
+img {
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 120px;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.column1 {
+    float: left;
+    width: 15%;
+    padding: 10px;
+    height: 100px;
+}
+
+.column2 {
+    float: right;
+    width: 85%;
+    padding: 10px;
+    height: 100px;
+
+}
+
+
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+@media screen and (max-width: 800px) {
+    .column {
+        width: 100%;
+    }
+}
